@@ -4,16 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 
 
-
-/*
-First Name,
-Last Name
-Street Name
-House Number
-Apartment Number (optional) Postal Code
-Town
-Phone Number Date of Birth Age (read-only)
-*/
 namespace Macrix.DB.Model
 {
     public class User

@@ -37,12 +37,12 @@ namespace Macrix.DB.Map
                 x.Property(t => t.PostalCode).IsRequired()
                     .HasColumnName("POSTAL_CODE")
                     .HasMaxLength(32);
-                    x.Property(t => t.Town).IsRequired()
-                    .HasColumnName("TOWN")
-                    .HasMaxLength(64);
-                    x.Property(t => t.PhoneNumber).IsRequired()
-                    .HasColumnName("PHONE_NUMBER")
-                    .HasMaxLength(32);
+                x.Property(t => t.Town).IsRequired()
+                .HasColumnName("TOWN")
+                .HasMaxLength(64);
+                x.Property(t => t.PhoneNumber).IsRequired()
+                .HasColumnName("PHONE_NUMBER")
+                .HasMaxLength(32);
                 x.Property(t => t.DateOfBirth)
                 .IsRequired()
                 .HasColumnName("DATE_OF_BIRTH");

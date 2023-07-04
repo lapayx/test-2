@@ -1,12 +1,10 @@
-
-
 using System.ComponentModel.DataAnnotations;
 
 namespace Macrix.Api.ViewModels
 {
     public class UserViewModel
     {
-   
+
         [Required]
         public string FirstName { get; set; }
         [Required]

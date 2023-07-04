@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js --config webpack.config.js --mode=development",
+    "dev": "node node_modules/webpack-dev-server/bin/webpack-dev-server.js --config webpack.config.js --mode=development --env  apiUrl=http://localhost:5400",
     "build": "node node_modules/webpack/bin/webpack.js --env.prod  --config webpack.config  --colors "
   },
   "author": "",

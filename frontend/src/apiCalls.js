@@ -1,6 +1,6 @@
 export function loadData() {
     return new Promise((resolve, reject) => {
-        fetch("http://localhost:5400/api/user")
+        fetch(API_SERVER + "/api/user")
             .then((data) => data.json())
             .then((data) => resolve(data));
     });
@@ -8,7 +8,7 @@ export function loadData() {
 
 export function saveBatch(data) {
     return new Promise((resolve, reject) => {
-        fetch("http://localhost:5400/api/user/batchChnage", {
+        fetch(API_SERVER + "/api/user/batchChnage", {
             method: "POST", // *GET, POST, PUT, DELETE, etc.
             mode: "cors", // no-cors, *cors, same-origin
             headers: {
